@@ -47,7 +47,7 @@
              end
     end)(Member, List))).
 -define(fail(Msg),
-        .erlang:error({failed,
-                       [{module, ?MODULE},
+        erlang:error({failed,
+                      [{module, ?MODULE},
                        {line, ?LINE},
                        {msg, Msg}]})).
